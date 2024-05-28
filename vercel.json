@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "searxng/webapp.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "searxng/webapp.py"
+    }
+  ]
+}
