@@ -1,13 +1,16 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "searxng/requirements.txt",
-      "use": "@vercel/python",
+      "use": "@vercel/python@3.0.0",
       "config": {
         "maxLambdaSize": "15mb",
         "includeFiles": "searxng/**",
         "memory": 3008,
-        "maxDuration": 30
+        "maxDuration": 30,
+        "buildCommand": "pip install -r searxng/requirements.txt",
+        "outputDirectory": "searxng"
       }
     }
   ],
