@@ -1,4 +1,6 @@
-python_version: "3.10"  # 强制指定 Python 3.10
-Flask==2.3.3
-gunicorn==21.2.0
-searxng==1.0.0
+flask
+flask_sqlalchemy
+flask_cors
+gunicorn
+celery
+requests
