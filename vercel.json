@@ -1,14 +1,8 @@
 {
   "builds": [
-    {
-      "src": "searxng/webapp.py",
-      "use": "@vercel/python"
-    }
+    { "src": "searxng/requirements.txt", "use": "@vercel/python" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "searxng/webapp.py"
-    }
+    { "src": "/(.*)", "dest": "searxng/wsgi.py" }
   ]
 }
